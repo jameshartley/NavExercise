@@ -1,10 +1,50 @@
 <!doctype html>
 <html>
 <head>
-  <title>HUGE NavExercise</title>
-  <link rel="stylesheet" href="/styles/main.css">
+<title>HUGE NavExercise</title>
+	<link rel="stylesheet" href="/styles/main.css">
+  	<meta name="viewport" content="width=device-width">
 </head>
 <body>
-<h1>Hello.</h1>
+
+<div id="panelsWrapper">
+	<header id="desktopHeader" class="group" >
+		<a id="d-logo" class="logo" href="/"></a>
+		<nav>
+			<ul id="items"></ul>
+		</nav>
+	</header>
+
+	<header id="mobile-header" class="group" >
+		<div id="slide-window">
+			<a id="m-trigger-open" onclick="navToggle()" href="#">Open Menu</a>
+			<div id="m-nav-opened">
+				<a id="m-logo" class="logo" href="/">Huge</a>
+				<a id="m-trigger-close" onclick="navToggle()" href="#">Close Menu</a>			
+			</div>
+		</div>
+	</header>
+
+	<nav id="navPanel" role="navigation" class='group'>
+		<ul id="items-mobile"></ul>
+		<p id="m-copyright">&copy; 2014 Huge. All rights reserved.</a>
+	</nav>
+
+	<div id="mainPanel" role="main">
+		<section id="top">
+			<img class='mobile-element' src="images/background-image.jpg" alt="Huge" width="100%">
+			<h1>Get Paid for <span>giving a shit.</span></h1>
+		</section>
+		<section id="content">
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet neque sit amet arcu dignissim luctus sit amet ac erat. Fusce facilisis arcu sit amet mauris rutrum fringilla. Vivamus eget aliquam felis. Duis eget libero non est finibus accumsan. In dapibus fermentum risus, sit amet tincidunt dolor consequat quis. Nunc ut erat quis turpis aliquet ullamcorper. Duis in dui at est facilisis auctor porta aliquam nunc. Aenean et porta eros. Curabitur faucibus pellentesque leo, quis maximus velit eleifend non.</p>
+
+			<p>Pellentesque odio leo, bibendum non vehicula id, semper cursus justo. Sed mattis dui vel ipsum interdum pretium. Proin pellentesque nulla non urna blandit porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam nulla eros, imperdiet ac dui eu, condimentum luctus quam. Nunc vehicula lorem ligula, vel cursus odio vulputate at. Maecenas ut ipsum ac mauris bibendum semper. Nullam sit amet fermentum nunc. Mauris at dui augue.</p>
+
+			<p>Mauris semper ante ut mauris scelerisque euismod. Aliquam tempor tortor a eros mollis, et rhoncus neque tempor. In porttitor, neque eget vestibulum tempor, erat nulla faucibus quam, vitae dignissim metus leo vitae libero. Integer venenatis sapien ut risus pellentesque elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac porta sapien, et condimentum nisi. Praesent sagittis consectetur diam, ut tristique sem. Vivamus sagittis dolor nibh, id luctus est sagittis ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Pellentesque nec lacus sodales, consectetur enim ac, molestie ante. Sed nibh augue, laoreet vel auctor nec, accumsan eu mi. Ut a neque diam. </p>
+		</section>
+	</div>
+	<script src="js/script.js"></script>
+</div>
+
 </body>
 </html>
